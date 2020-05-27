@@ -29,25 +29,38 @@
         <!-- 插入包含 srcsets 和 sizes 属性的图像 -->
         <a href="https://www.mozilla.org/zh-CN/firefox/new/">
           <img  srcset="firefox_logo-only_RGB_120px.png 120w, 
-                        firefox_logo-only_RGB_400px.png 400w"
+                        firefox_logo-only_RGB_400px.png 400w" 
                 sizes="(max-width: 480px) 120px, 
                       400px" 
                 src="firefox_logo-only_RGB_400px.png">
         </a>
         <a href="https://www.mozilla.org/">
-          <img>
+          <img  srcset="mozilla-dinosaur-head_120px.png 120w, 
+                       mozilla-dinosaur-head_400PX.png 400w" 
+                sizes="(max-width: 480px) 120px, 
+                      (min-width: 481px) 400px" 
+                src="mozilla-dinosaur-head_400PX.png">
         </a>
         <a href="https://addons.mozilla.org/">
-          <img>
+          <img  srcset="firefox-addons_120px.jpeg 120w, 
+                        firefox-addons_400px.jpeg 400w" 
+                sizes="(max-width: 480px) 120px, 
+                      (min-width: 481px) 400px" 
+                src="firefox-addons_400px.jpeg">
         </a>
         <a href="https://developer.mozilla.org/zh-CN/">
-          <img>
+          <img src="images/mdn.svg">
         </a>
         <div class="clearfix"></div>
       </div>
 
       <div class="red-panda">
         <!-- 插入照片元素 -->
+        <picture>
+          <source media="(max-width: 600px)" srcset="red-pandas-trunk-600px.png">
+          <source media="(min-width: 600px)" srcset="red-panda_1200px.jpg">
+          <img src="red-panda_1200px.jpg">
+        </picture>
       </div>
 
     </main>
